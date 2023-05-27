@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@100;400&family=Pacifico&family=Raleway:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Roboto:wght@100&display=swap");
+:root {
+  --primary-ForegroundColor: hsl(240, 33%, 92%);
+  --secondary-BackgroundColor: hsl(240, 40%, 10%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-ForegroundColor);
+  color: var(--secondary-BackgroundColor);
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  /* max-width: 80rem; */
+  margin-inline: auto;
+  padding-inline: 2rem;
+  /* border: 1px solid blue; */
+}
+.mainContainer {
+  margin: auto;
+  margin-top: 4vh;
+  display: grid;
+  grid-template: auto/repeat(auto-fit, minmax(10rem, 25rem));
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  /* border: 1px solid black; */
+}
+.totalExpense {
+  margin-left: 1%;
+  color: var(--primary-ForegroundColor);
+  border: thin solid var(--secondary-BackgroundColor);
+  background-color: var(--secondary-BackgroundColor);
+  border-radius: 8px;
+  padding: 0.5rem;
+}
