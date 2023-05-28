@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   gap: 0.25rem;
   /* border: 1px solid black; */
+  border-radius: 8px;
 }
 .totalExpense {
   margin-left: 1%;
