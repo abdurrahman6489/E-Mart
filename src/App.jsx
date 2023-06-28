@@ -11,8 +11,10 @@ function App() {
   const [sortingOrder, setSortingOrder] = useState("ascending");
   const [totalExpense, setTotalExpense] = useState(0);
 
+  const PRODUCT_API = "https://dummyjson.com/products?limit=100";
+
   async function makeApiCall() {
-    const response = await fetch("https://dummyjson.com/products");
+    const response = await fetch(PRODUCT_API);
     const data = await response.json();
     setProductData(data.products);
   }

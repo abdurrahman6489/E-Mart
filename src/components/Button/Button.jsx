@@ -23,7 +23,7 @@ function Button({ stock, productId }) {
       >
         -
       </button>
-      <p className="productQuantity">Items purchased : {count}</p>
+      <p className="productQuantity">Items added : {count}</p>
       <button
         id="increase"
         className="btn"
